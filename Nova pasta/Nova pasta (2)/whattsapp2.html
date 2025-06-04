@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ECE5DD;
+        }
+        header {
+            background-color: #075E54;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .profile-container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-details {
+            flex-grow: 1;
+        }
+        .profile-details h2 {
+            margin: 0;
+        }
+        .profile-details p {
+            margin: 5px 0;
+        }
+        .messages {
+            margin-top: 20px;
+        }
+        .message {
+            background-color: #DCF8C6;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WhatsApp - Perfil</h1>
+    </header>
+    
+    <div class="profile-container">
+        <div class="profile-header">
+            <img class="profile-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyOtq2mRydwU2CmTrgQfDBcdGKPJoRDM4QQ&s" alt="Foto de Perfil">
+            <div class="profile-details">
+                <h2>Thiago de Carvalho Prodosimo</h2>
+                <p>Número: +55 44 92000-4450</p>
+                <p>Contatos: <strong>250</strong></p>
+            </div>
+        </div>
+
+        <div class="messages">
+            <h3>Mensagens Recentes:</h3>
+            <div class="message">
+                <p>Usuário 1: "Olá! Como você está?"</p>
+            </div>
+            <div class="message">
+                <p>Usuário 2: "Podemos marcar aquela reunião amanhã?"</p>
+            </div>
+            <div class="message">
+                <p>Usuário 3: "Gostei muito da sua última postagem!"</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

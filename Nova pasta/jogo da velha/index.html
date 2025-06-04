@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo da velha</title>
+</head>
+
+<style>
+
+   .painel{
+    background-color:black;
+    border-radius: 44px;
+     margin: auto;
+     text-align: center;
+   }
+
+   .number_one{
+    text-align: center;
+    color: aliceblue;
+
+   }
+
+   .imagemdefundo{
+    background-image: url(https://media.istockphoto.com/id/1432965103/video/neon-flash-light-structures-hi-tech-neon-sci-fi-tunel-trendy-neon-glow-lines-form-pattern-and.jpg?s=640x640&k=20&c=9tpJzfgnVaqrFa6S9HHtUXVRQNKWFGKw34yTyewlZyM=);
+    background-size: cover;
+  }
+
+   .botao{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    font-size: 30px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 50px;
+   }
+</style>
+
+<body class="imagemdefundo">
+    <div class="painel">
+ <h1 class="number_one">Meu jogo da velha</h1>
+    
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+        .quadrado{
+          width: 200px;
+          height: 200px;
+          background-color: aquamarine;
+          border-radius: 22px;
+          font-family: "Luckiest Guy", cursive;
+          text-align: center;
+          font-size: 120px;
+
+          
+        }
+        .jogo{
+            margin: auto;
+
+        }
+    </style>
+    <div>
+         <span class="texto" id="jogador1"></span>
+         <span> Vs </span>
+         <span class="texto" id="jogador2"></span>
+        <table class="jogo" border="0">
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+        </table>
+        <br>
+        <br><br><br><br>
+          <button class="botao"
+            onclick="reiniciar()">REINICIAR🔄️</button>
+            <br>
+            <button class="botao"onclick="sortear()">Sortear🔀</button>
+            <br><br>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+ var jogador = "O";
+ function jogar(celulas){
+    if (celulas.innerHTML =="") {
+        celulas.innerHTML = jogador;
+         if(jogador == "O"){
+            jogador = "X";
+            celulas.style.backgroundColor = "red";
+            celulas.stylecolor = "black"
+         }  else {
+            jogador = "O";
+            celulas.style.backgroundColor = "blue";
+            celulas.stylecolor = "white"
+         }
+    }
+     reiniciar ();
+    function reiniciar (){
+        var celulas = document.querySelectorAll("td");
+        for(var contador=0; contador <9; contador ++);
+        celulas[contador].innerHTML = "";
+        celulas[contador].stylo.backgreoundColor ="";
+    }
+ }
+       sortear();
+   function sortear(){
+    var nomes = ['isabela', 'bruno', 'rafael', 'teago'];
+
+    alert
+
+    var nome1 = nomes[ Math.floor( Math.random()* nomes.length)];
+    var nome2 = nomes[ Math.floor( Math.random()* nomes.length)];
+    alert("Sorteio de número com random" + Math.random());
+    alert("Encontrando posição da lista:" + Math.random() *nomes.length);
+    alert("Encontrando posição da lista 2:" + Math.floor(Math.random()*nomes.length));
+   }
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5ddd5;
+        }
+        header {
+            background-color: #075E54;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #128C7E;
+            color: white;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .chat {
+            flex: 1;
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .message {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #dcf8c6;
+            max-width: 60%;
+        }
+        .message.sent {
+            background-color: #34B7F1;
+            color: white;
+            align-self: flex-end;
+        }
+        .message.received {
+            align-self: flex-start;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 30%;
+            right: 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        footer input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer button {
+            padding: 10px;
+            background-color: #075E54;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chat Online</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Contatos</h2>
+            <p><strong>Usuário 1</strong></p>
+            <p><strong>Usuário 2</strong></p>
+        </div>
+        <div class="chat" id="chat">
+            <div class="message received">
+                Olá, tudo bem?
+            </div>
+            <div class="message sent">
+                Tudo ótimo, e você?
+            </div>
+        </div>
+    </div>
+    <footer>
+        <input type="text" id="messageInput" placeholder="Digite sua mensagem...">
+        <button onclick="sendMessage()">Enviar</button>
+    </footer>
+    <script>
+        function sendMessage() {
+            const input = document.getElementById("messageInput");
+            const chat = document.getElementById("chat");
+            
+            if (input.value.trim() !== "") {
+                const message = document.createElement("div");
+                message.className = "message sent";
+                message.textContent = input.value;
+                chat.appendChild(message);
+
+                // Limpa o campo de entrada após o envio
+                input.value = "";
+                chat.scrollTop = chat.scrollHeight; // Rola para o final
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffef0e;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header input[type="text"] {
+            padding: 5px;
+            width: 300px;
+            border-radius: 3px;
+            border: 1px solid #000000;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2600ff;
+            font-weight: bold;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #000000;
+        }
+        .product-card button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #ecf014;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini Marketplace</h1>
+        <input type="text" placeholder="O que você está procurando?">
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categorias</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Minha Conta</a>
+    </nav>
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>R$ 100,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>R$ 200,00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>R$ 300,00</p>
+            <button>Comprar</button>
+        </div>
+    </section>
+</body>
+</html>

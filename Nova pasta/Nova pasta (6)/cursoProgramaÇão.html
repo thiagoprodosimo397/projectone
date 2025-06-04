@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site de Cursos</h1>
+        <p>Clique no card para saber mais sobre o curso</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card" onclick="showDetails('Curso de Programação')">
+                <h3>Curso de Programação</h3>
+                <p>Aprenda a criar aplicativos e sites incríveis!</p>
+            </div>
+            <div class="card" onclick="showDetails('Curso de Design')">
+                <h3>Curso de Design</h3>
+                <p>Melhore suas habilidades de design gráfico!</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function showDetails(curso) {
+            alert(`Você clicou no card do ${curso}. Mais informações em breve!`);
+        }
+    </script>
+</body>
+</html>
+

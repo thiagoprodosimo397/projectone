@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Dino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let player = { x: 50, y: canvas.height - 100, width: 50, height: 50, velocityY: 0, isJumping: false };
+    let obstacles = [];
+    let score = 0;
+
+    function drawPlayer() {
+        ctx.fillStyle = 'green';
+        ctx.fillRect(player.x, player.y, player.width, player.height);
+    }
+
+    function createObstacle() {
+        const obstacle = { x: canvas.width, y: canvas.height - 100, width: 50, height: 50 };
+        obstacles.push(obstacle);
+    }
+
+    function drawObstacles() {
+        ctx.fillStyle = 'red';
+        obstacles.forEach(obstacle => {
+            ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+            obstacle.x -= 10; // Velocidade do obstáculo
+        });
+    }
+
+    function updatePlayer() {
+        if (player.isJumping) {
+            player.velocityY += 1; // Gravidade
+            player.y += player.velocityY;
+
+            if (player.y >= canvas.height - 100) {
+                player.y = canvas.height - 100;
+                player.velocityY = 0;
+                player.isJumping = false;
+            }
+        }
+    }
+
+    function detectCollision() {
+        obstacles.forEach(obstacle => {
+            if (
+                player.x < obstacle.x + obstacle.width &&
+                player.x + player.width > obstacle.x &&
+                player.y < obstacle.y + obstacle.height &&
+                player.y + player.height > obstacle.y
+            ) {
+                alert(`Game Over! Score: ${score}`);
+                document.location.reload();
+            }
+        });
+    }
+
+    function updateScore() {
+        score += 1;
+        ctx.fillStyle = 'black';
+        ctx.font = '20px Arial';
+        ctx.fillText(`Score: ${score}`, 10, 30);
+    }
+
+    document.addEventListener('keydown', event => {
+        if (event.code === 'Space' && !player.isJumping) {
+            player.isJumping = true;
+            player.velocityY = -15; // Pulo
+        }
+    });
+
+    setInterval(createObstacle, 2000); // Criar um novo obstáculo a cada 2 segundos
+
+    function gameLoop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawPlayer();
+        updatePlayer();
+        drawObstacles();
+        detectCollision();
+        updateScore();
+        requestAnimationFrame(gameLoop);
+    }
+
+    gameLoop();
+    
+</script>
+</body>
+</html>

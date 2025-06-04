@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo e Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bbb6b6;
+            background-image: url("https://www.google.com/imgres?q=plano%20de%20fundo%20para%20um%20site%20de%20turismo%20e%20eventos&imgurl=https%3A%2F%2Fimg.freepik.com%2Fvetores-gratis%2Fplano-de-fundo-de-viagens-de-design_23-2149193475.jpg&imgrefurl=https%3A%2F%2Fbr.freepik.com%2Fvetores-gratis%2Fplano-de-fundo-de-viagens-de-design_20856827.htm&docid=5D8XkkItzNJ8UM&tbnid=0K27Qxw0OTRP7M&vet=12ahUKEwjEofvDhKmMAxXpDrkGHcV7A_oQM3oECEoQAA..i&w=626&h=417&hcb=2&ved=2ahUKEwjEofvDhKmMAxXpDrkGHcV7A_oQM3oECEoQAA");
+        }
+
+        header {
+            background-image: url("https://www.google.com/imgres?q=plano%20de%20fundo%20para%20um%20site%20de%20turismo%20e%20eventos&imgurl=https%3A%2F%2Fimg.freepik.com%2Fvetores-gratis%2Fplano-de-fundo-de-viagens-de-design_23-2149193475.jpg&imgrefurl=https%3A%2F%2Fbr.freepik.com%2Fvetores-gratis%2Fplano-de-fundo-de-viagens-de-design_20856827.htm&docid=5D8XkkItzNJ8UM&tbnid=0K27Qxw0OTRP7M&vet=12ahUKEwjEofvDhKmMAxXpDrkGHcV7A_oQM3oECEoQAA..i&w=626&h=417&hcb=2&ved=2ahUKEwjEofvDhKmMAxXpDrkGHcV7A_oQM3oECEoQAA"); /* Substitua pela imagem desejada */
+            background-size: cover;
+            background-position: center;
+            color: rgb(35, 32, 161);
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgb(255, 244, 244);
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #e50914;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turismo e Eventos</h1>
+        <p>Explore destinos incríveis e torne seus eventos inesquecíveis</p>
+    </header>
+
+    <nav>
+        <a href="#turismo">Turismo</a>
+        <a href="#casamentos">Casamentos</a>
+        <a href="#formaturas">Formaturas</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="turismo">
+            <h2>Destinos Turísticos</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSga1orooSM2lN7pgr-J1bSFh2Wh5aC6J0xuvKgk1qP2x87lBvxdGA9a58&s" alt="Praia">
+                    <h3>Praias Paradisíacas</h3>
+                    <p>Descubra as praias mais incríveis para relaxar e aproveitar.</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pC2XGcfnv9WoKMlNHpjIYxLElhRnBkynew&s" alt="Montanhas">
+                    <h3>Montanhas</h3>
+                    <p>Experimente trilhas e paisagens deslumbrantes nas alturas.</p>
+                </div>
+                <div class="card">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUWFxcVFxcYFxUYGBgaGRcXFxgVGBgYHiggGBolHRgYITEhJSorLi4uFyAzODMtNygtLisBCgoKDg0OGxAQGzEmHyUvLy0tLy01LS0tLS0tLS0tLS0tLS0wLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAK8BIAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBQIEBgEABwj/xABJEAACAQIEAwUECAIIBAQHAAABAhEAAwQSITEFQVEGEyJhcTKBkaEUI0JSscHR8DNDBxUWU2KCkuEkNHLxRIOUwjVUk6KjstL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QANBEAAgIABAMGBAUEAwAAAAAAAAECEQMSITETQVEEFJGh0fAiUmGxMnGBweEjQlNiQ6LS/9oADAMBAAIRAxEAPwD7Hmrmag95XGuVdGdhjFdquDJqc1VBYea9NCVqlmqR2EqDGo56FduRrQgbAW3Y3GU+zGnpRVwagEAb++vWyc3SjtNayl0MoxXMqYi2pOTYRECl2L4Q2pVzB+zTRcOQ0nWrANNYrhsRLBjiL4kV+HYcIoEk+tXAagKmKxlK3bN4xUVSCA1yajmqJapssmTUWNDz1wtSzAeNQJqU14ipEDY1Cj5aiVqaKsGBXiKJFeiigsihoqmoipA00I6ajXi1QZ6LCiRaoF6gWobPU2VlCG5UDcoRehPcpWVlDm7XO9qqXqJemFFzva53tUu8rweqEUXx7FiR8q79PY7nWrVvgjAEzry1/KKqphM3tSPOvcTwntyPmGu0rfmWExjfe+FM8Nj1I1NL34QseFzPuij2ODgR4vX08q58ThSW524L7TGWqtfmNEug7VItUbeHUCBXmtiNK4mlyPTV1qczV1TVS6MpzFjA32qCcSBMBTHXlV8JvVEPGinUtC+6zXVPnVVsWBM1FMUDrBjrRkkPPGxkWoINVhi1mJonegbnTefzqHFopST2M32o7aLg8XhsNkzm+fFlMuozBRFtdTOu8DQ6mIpfx3jty+6rbBQWmLBkukMzQViVI8MEzOnSRuPjuOVy+JK6ond2iRqudwvubVm9VXpSFeKFbbRoSIOuuSOgOgkyTXO5N7HQo0avgT3TdQtcZhrmly2pVt5Mzy/y0otcQxFuG7y7pvLFoHWCSGjoeRHlQ+zlxvpAYA5TcYSdp8W2u2h28qr3uJhbgCgRAYnboCJWdI+dZ62Wa7hvacEReGWIBcCFEwAxk+zJAkbSJgGa0Gevl1rGoLoiO7IPmCuqugJj7MkaaH1prw7i96yGwoILKWCO2uULuADodPEJ0Gu4gVV9ROKexvlNEFYS3euh0Zrjk94kyxI0IMQD0nTb8KDjcdft3LmW7cAV3+1IChiBoZBA6Ec/SBTQuGfQZqJNZzg3aZX8F4hXEeMaIwJAB19nUjy8QPOA+e4BqTAHM6VVkZWgk1EtVf6Uv316bjfQx66j4ipTSsdBc1cz0Emol6VjoM1yhtdoZehM1A6JveoLXaixoZooCTXaGbtcIqISqSCz3eV4E0UWankq1AhyAQaIgNECVMJVZCMw3NBNsDp6Vf7qui0K0UqIcbFmKQxIG3Sh4cXB9n4mnPdivBKriaVRLwviuykA3MfCua1fK17IKytGlFBrZPKqGJs3BsFj8KelKBctA1pDEozxMPMjK3EuBtAfhVvB2ZBzjX99KbPZ+FSVQNtK3n2i1VHLh9kyytu/zKlvAJMxtsKD2lv93hnaJkokeTuqH5E0zpH22wy3MIyspYBkbKDEwdj1B6Guac73OzDw1HZHzjjXExcwzIjAt3llmIMKIS4CpeImSumppfOJCDMEXMmUsWQErm9oZoJ5DMImYnrprOVbDAqGNnKQAq6+3lUgbgMBttJrPXLDZ7pdWJbMGYJ3hJGUkCdMoBAHWD6DBdDpoZ8KxeItvaUqpQszAT7WZiwCuJGk7a+6k9gXriBlMqFKZiMgkkEwbkTpO0xTHs0ct4WiIVixCyCFuWzOdAdYKn5nlSfiNxnuucvhts9q2BFzJbt5VAVZguxPPzJ6gS1Y9KL19mS0kqPAw8We0FzAQRmXy5TRr3E5xAJEZRbYzO6qpefUyOYINL7dxkuuTbYozEXBlYB7ZuG2ZGwdSQwI3GvWbnFl/wCM7j7Aa2nISWUNmnfNJyzyAHUUmtSkzT4u6CyDMs55iVn2XIkBjGkUXG/xbh0gXG5fe1jVupFfPeE32N36u6hvICWDh10ykF4BOfQnbXbzrX3xiCrMHtsCZMI8gwCOcVnKFAnZBiqOJEqsg8gUaQy8/skrudPMVcw1x7jNZuuX7k5FmfZEjNpu2h8W8QOdJcUbglvDopB9oGDBJiDp7/Wh4jizWb2d0gmFOpIKkKCwI/xLMEc+e9NJsoa3L5+j4hpMq9m6NtJZkMeRFwDWq/De0L2GBVvBoWttsVaPgwkeIb85AoWH4tau4XEIphlsrKzr4bluW3iJArOWb/8ADHIgqf8AMzCdByDCtIwvclyPs2B4kl5ZQ8gSPJhKnzB/EEbgirBNfMex3FCotsTol3um3/h3vENwPZcO9fTGpZNaIbrU8agRULl8ChjFCtVgy6GLx4LSyy1uKEUrouTHSrLERyq+GkTxG9isLRrwWuqxB1OnTlRloeGkCxLBoetFYDKa81ob7VGUG5HxqooiTFly6wNTGKIGoNWriIdZHuNV8gE6qfLWa61lktUcElOL0kbCu1Vu3eld74ARNcFHqWGL14PVNrleW/FLQLLhavZqFaug0SKYEia5FQLRVdr+tABroqq2lGJNBNtqGIgblLe0jzh29V+RBpmto86odoVHcMBptrp186hrQpPUxPGbLGzikUSQoVVXVv4hCggc9o0mIrLW8HczXGjSHEysToOu+o+VavHXUNi8qXPrHEqwLT7ebNm5AdaV4nCWwoVHchy7kEEgyR44YAQEURPMxrJqFI1SF/Y7G2hfS1mPem5dEQ0QLYmSPDIM6b7daR8YwDZ7uUoQL+JJOdRHiSZzkbTB/ZrQ8GwYXF2XCjM1y8UUaeB1yJAPs+JfLn71fFcFca7itUBFzEyNRAe5aVSYGolIMfeG86XGVSsGtChjcO4uYgkKJZspz25I+kW+Qaa0nHFI4jJ1He2I8oUHQ8tQKU8WwNx1uAKsjvIGaNHvWrikkiIIB8UxqNfEJfcXvZ8SWTVQ1syNDAC6kHUDfU+6lKV+f7BFGXwWPs2r4VpBRiQVXMurBNIYEElhPmNelbjH5wsqUKyJUDxDwyZPKZMDz86W8Y4SGuWLltLbXNQRGhAZHAeDrrMHTam+KtTZRhzaPMEKDvPSOVTJptFR0Qgc5SGMSoBAgxsBB+JFe7UtDYgwIS0PaBIGVk1MSYgnb1617HIAHkbCI/08tKl2ouFfpbCJCFh6gW2/Kkt0Vegn7P4Y3zdKMtsi0RcUkOFLFXW8rfbtlQ5g8xuZ0JcxNrxFbaFUCkF2bMQWEMxTwW53HuPnVXsS+ZcRsP8Ag7kAKBs1wD1HlVNMbAfwr4URvtAGTZBBAYSCABHQR1nZK5MzUtENkwUWLr2TlSU8J++DcRkadmXNoRuDtyr7CwZgDtIBPPcda+RW3KYW4CNntaLO/ctsWOslQAZ3ivs9m8AinKRKqdR5Cmm7IxKaKQwzHcA0QYUfdFW/pQ5D5RQ7j5tdq04kuZzLCjy1BNljX0qAsruKKSOlBe0KcZp8xSg+lhHOnIigC8p35edDv4b7v4mq7WTXRhwi1ucuNi4kXWUNeug+EHT1NAbDN0oiqelWlaRVuWTYyUFjfiKqYU9Y9KHcsMOhq9bsmd4o5sLzJNT3jK9WX3NSjomhwbHnUTY86w3Du02Pa7irl9LVm1ZGVFuOqWmYsLaE3GUXFDNmIeGRhoAIzHfAz+5FcJ6dFW5hTyNQGCP3qvAVG68CaKQEcNZyjejiqi4nyo63AedABGoRsg1LPympCgCMUHE4pba5nMDbzJ5AAbmi3roUFmMBQST0AEk1isbjO+fO+g+yp2VeQ05mQSRuCI2iplKhpWXb/HLrklALdtdSxhnPIR9kEkgayPOKRYi5fvvLGR9lSAYMSSDOvuAn0EVevwUAMZSC7TO5mNVIAgBj/mFU1QKe8LMNJVRcMBUA3WNZOp1+0K53Js1SSIDDNDBgpylSZHtNIIU+U5V9886CQbqXBlzB9DrsFhpmNT4tz09KHxPiJdbyRlFrIIkTq4hiQZMxz+c0n/rKApFyCysTG5l2U7A/dHwoUWMecOsKuKtjYo6KJ/wALHvy0q4g6nGYhcg1uXl2PikuROke1l+AruEvTjAdNLp1jzIA9kfjSvijRxF9N8SvLq4n7B69ffVxWv6BZfTHhVV8hOUlPseyRK7idfrBpGgir9zEgN3YYlgMyxl9nKG+amfUedY3DXl7q4NBGS5Og2bu/uD+9pxi8Woe0QVByDxZvtKquJ18XtKIpyhqNSNJi8HBQOQVf/LlJA8QMSnrtoZBXercwAVfDcbfMIPhI1GYAHRtNemoEAVXuYQAwGYhzC+ImDGZRy12H+Y0I3StmZM2mB3OoY5WXUwdcvM+0azKsNcwgMgtPXlPU7g+/fqDvXsdgTdzhtGcRKsNdANJ0VoAidDqZG1VLeIHi55RI31UweQ/xD/V5UR8WAWBYQF8Ww8LKCran9ytOmO0VeHcN7h7hzu2e09qCNszO0zPLNEaQF1jSqScLvqB9YWHhBg3BBU2NI5SLb77zz1NPrGLLgE+2rd2+5kwe7ubDowJ/wAIO7UGzxTnA1B0MQY1e3A121HTTnrTTkmFIV8Ow10Wbyv7RNqPEGmLZU+6fxr61hLwe2hUhvCo0IOsDpXz7E4hRB+wwDq2s5WMaz9oN4WHOPfRMBdKnPbco4MZgeY5E7MPIyDzp53uTKCaN681FSapYDtUAB34AGxdQYGsZiN8s6GPZMTMzWlOWAdCDqCNQZ5jrVJ2YtNCvuTUfKKa6VAx0q7JFwEcqtKFjYUW4FO9A8I2Pxq7RFMILIPSg/R5MVC9i7dsDPcCztLASYJgTuYB+FEtPznek5aDykmwgA3qVnDiRJqfeivLeUVnmLo+WcA7RpiL1vGYy5bw2ndBbblbd20ubw3bD5u8gu6zoIckGVIP12ziEZVZCCjAFCpBUqRoVI0IjpX5GwWMfvEAQOZIClUcGQREHRhBOh90GK+q9gOMXcRjHS9ddAct0DD3FWxb7tLZyshYjuzbt5YG2ogRK3GyLPs+eoNB0qvZKsA6MGVhKsCCCOoIOoqlxfilvCoHuEAM6W111ZnMBVG5O5gcgatKxOVDEYZfOvd0Jmolm9K6bnnQ0kJSvYMBRAapjMdjRmsEfbp0uosz6CTttiithUBg3bqpPQAF/hKgHyJrMC0FVmLQIHiPhUTrqx5eLmfs057d4a4y2sl/u4LmTat3Nk3AYSOkqQdaxScFvX3OY9/bYsiXLlxyyXMrZWXvGIKZhlOX7xIgiK58R61ZtBaWy/ieI23MC/Zg92p8c+EBc/szuF+dHu4uyyn/AIhdlUQt9wNRJ8KkAnaI5Cq+Gt3C1lu6lSVbMpUFS9pg2hUkHUgSDvyMGocQxSqWULcW5LgwgY6KxlmWYhhsY1EQazRpQK/luWWtG/JIUArYxQGjTysqTp5/7qcVwO2Ft97fuCAU/hXRml3YAZ7y6+KPhyps+INyxcYqigZHzycpUOMxbKyjQK0jwzEHY1l7farErdGSbbMQEs3ShsXxzy3VWM3sgAEKDGpJg1HNyE6HOHs2BdF1Rfchy4HdWF8RAkAnEEjTy50DiJwq4p3uG8txbmYju7Z8StyYusg5dzTTBvZxATE2wVBuAXFaB3TroVOglSQ0OeZg7wqri1u3bxGJxN7MtizcYEiA9+6WYixbP2VE6uIPtax7ItynsVeGcIt3Fud1evMpXJP0cQpDo2pXFn7sRodfjdxPB84UC+QVmZtXRPgtr9i6Y9if83qSjxfE795iL5bLoe5tN3SYdZjNdukgZxBBVuZiVbwhhxPBG2iFEtkkBmhnABZLILhnJQ+LbNMyN4Ia/ivclZWN+4KBB9IUMpT2reJ18IUgDKTmPL161C2iqGi8pm26SbWLjMBm1PdEaRJmT8dV/wBPewxS4xv2wEzLqblqQ03FYjx8h08J0AM02wODYubedXs3LLnNlhWzA5XgQuqZswjQr0IAzem5apij6I0GL9ghkKtN22ssoYW/4qISYyjluasJgLxbwBXDWcjZHR4YJoPq7hjVVG3voFniqsCqW+7tKGKKHW2oUhmQsxAi46jORrAMzyDPD4a27oXWSLZuOpEEp3T7jqGhZ8xOtU21uCSKnDsDiVuMGsXQHtCSbdwDMuU6k24nwnn9rbWl+LxdxcxgqwyOBtrAJ0LLzK9Nqv8ABsItxpVBJFwjLkUK4OXu/ABIltG38GsGaJe4j3cxib4VdSzXL+ozBc2RWCquv3ZiCZkEtPXYK03BWsTNkx9i8UBiYS7odgZjKx/z1a4VcY2xm0bY6kagSpiByge80WziXl2Nw5ciMG7vDuSS5WMzIZgTqTENPOQRWutlA7rxIxJKMYFvIdcjqPtgaCZMc6lsdM61wLqRAIltOWoceZH6Hen3YrizIzYVzOWWtnoAfEnpzHv8qRd4I8aW9A0kMU0gsdIYx76Fw7FZMVZJtupDLH8xWDAKwDKoIbxFdQF8xRETTrU+nLiRNEfFqNSQBzJ0j30t4fxbC3g7B8htkC4r+Bkn2cwPXcdZr5F/Shxq+2JKeFbYVkQ2nLC9achgzMNCAdADzDaVplZg5JH228wNAFvzrCf0d9t3xJFjEFS4GjgQSS+VUIUBdOum49T9B1HKh6AqYk4ozglUtXbjLLiVC29oEOQQPLQnnBia72cd2tjYqsjNLwxk/wAMsBKARrz16Scpxj+lC3ae5aCO7ocuZfqgSBruSw8UAiJ9r3q8F/S8yStzCKVnMClwoAG15gyZPLrtSsq1sfVe7mvNhx1r4N2j/pNxl64e4utYQckI9wkjbT5melLuG9ucWJFzEXnkzJu3dJO0BttfwqqDnTZlmvZWBQkQQRrqpB5HyjQ01t8ZfurtuNbxRi+pfwC4sTv4luuCZ1BjYkUjtoSQBqTsOvkOpppjcGtlwjGTlViJ0XOucCV9rQjURvSolrSzQ8B7UYu0EtreZO7R7Vr6tSVVwDlA8MagPmk8jrGt/tJ2wxd+1YQ3VuQVuBguV1vr4tYAIKs0eGRoPOcZgLLO4WyLly5ByqgJbQTpEnQD5U3Fi5fxduzdd0uAEHvSHIZgSRLCPFmnMTzmRAoulbHH45KEd3yNl2j/AKQ8bbs4e3aUWwUQEvla8bltgXDLMqhBQAMqkgk+Q0XBP6RTdV1c2jdFkPpCKtwosopusocBzHPXmQJPx3C8Mv3blyzbXNcQEtlIiFYKZckCNdCTqSOZpXcun/vT3Vidp00fYrPbG5g8WxvPn75WVrjZcqXFZwi92rSlpeRkEh5OxAY8B/pQuG/cXGAIhcJaREOaWYQzOzQECmZ5g8o1+E553P7/AFrU8W7P37GGW7cOjqtxg0C6O88JlCc2QEKJOp0jQmF9C0m02fZO23Gbd+zNi7auKoEtbuK/8RshmBoInXXWRyNJfp4UICIMyCdcggrodCg1AUcxDdaxf9HqBsLiuQNyz8g3SmxxaEMsOxUAEkKpIDMAJlpAg/GopWHI1fEeKG2wZGgMzXY8MhO4jMJ3MwR/0jbWl47QMwCW7aqttVbKGYsxIZ0B8PikKGJk7EbjVH2lx6o9qQ3/AMPtP9k6SZiR7XwmhjjNxLhCjTvrykksYVbJYEawupj4eVSo6Db1HWL4iLiXiFCN4Dd7tVdSc4loC+3AymA06EazWdXAJJHiCgo7BbTsmp+rv2pmGXSfWCAGZQPD9r8tm4wQjIbSxOkMXPJtZy67aabUBOLobU5WIOHuP/EveyuIYAavMzrP5Va0E6ZpuF37gxAF4vc77NhrjG2wE2pa207KAWQDlIYjc1zteynEALnKYc3LkW0zTfuXSsyJGdNxoYK68xSvC48tiUXTw4uyvX2shPtTr5jpUuOY7usfiLWRCoxVnkBrdlidNzqdTuSaSXxWO9KFt3hX8sZmVWZUVrThGuIAbuIumfEsE5dYiBqFYNqreFFyxaDPBFoAHKiISBbyk2jBy6eysMM2kEaZlOMgrPdLPc3G9phtiO7I35iu4zjxKWWNtfFnQeJlyqFsxsdxm+IFW02SqQzwDuQxY3Vm8xAZW8DBSWgT4kjaDrnA5MSz4FfnDXR9y1ce2GkMEdCYYb6eET1zUhtcStrcVGtSRdwYkOw8Vy2SGidYyDTnpVjsnxFrtxwoAt/Q7l0glmYzcKlcxOmusxPKoknRrGSWhTv3ETKpVINq8yqWBAVVZSAptn7NtB5QR1lr2dYPdttLAnC3FEtICm35qJ/hr09KoLxO0UDMjAKjbOx0Nu47E6jkPM6inHALo+kIgXTu7yBg7EEKt4c928MHmDNKT0Etyl2exKy+VzH0e8/supHjY5h78/Odao38hBy3XGyrMjKTfyZv8Z0VdZBA/wARNXuy91WuNC3Afo5JBu5hDd8dPCIIyHXXcdNVmO4patG2XXETcJfKGtuAVxDHKMwEgmAD90imm0wew24Pcy4W8rFcq5CMpMqj3WEAvA9m2OepnbcuMBjba2ZuqrfWlYzfaC2myzOmoGh6UhwF21fwl/u3dS1uwfGgkAXbgB+rbxSQwyjp51Ze5b7keOZxbbKZzGyhymTvoTO2oqXqxrYrW+ILHeRaDZDcKK9tVgFpUDNBUGRm8jO9WuO3W+kpYnwr4QNOSq4PX7PT7VIb+AUWie807i4sx99i0nLppNaLjdktjww+8CeoUoonz1nanz8SY21qYK72oxPciybrMoKt4oLSBCwzCR7oifQUotY5lJ1OvL971VLzBnWPXl8hQ3+f4zt6VaRzKBvuwWCV8Rav5wvdNbZwynLGclhroxCqH05RvrG8/pQ7YXMClqzYCi4wzFiinwjTLEZTIHI/CvkXAe0LYN86KrvK+J9coDBiq6xrlGsbVDj3GLmMuG7dYFm3gBVHoBA+HWnmK5IppiBqza5tdhPu12oOKO3TKoHTadPiarR5D41bxLeG1P8AdnzH8W5yoHRUEgc9dfymmXDsKtwSZkEAdPMt/trS69ZZdxodQeo8utF72VA2jTz5kaH3UpW1oOcWtDXXP6N+IWB3qrauFCrhUuSTBB9kgT8aZcY7JYvHqL9uxbUsSV+sRPqzJVShaFIn376bUttcQVCAiBQOayAPhVh+K5uZ2iJYbaRE+QrifaZc178TdZKolZ7M4/h1q9dNhSCgzXEuKWUEr4VCnMFmQSB0OwmpY/g2Lw6XsQ+EytcVVDd/auEZXtsFCo22S2ZJkk5YjmA8R5EGCNRmuEEEcwTHuqScYBBWWgxIzvptES2g9Kcu1OSpx9+IsPh4c8ydS9Nh/wBl+zF9ExD3IT6QtrIFZCzBiblw5lJylSwAJiSOVY/GdiOIW1He2otkovhdHlnIATIrZmJYgdNN4pjdx4MTm0kD6y6IBIJA8WgJC6DTwjoKnb4o2ZWzucrKwzXrrgFSCpKsxXQ9RT73olXvxFOMW20yHZ7gHeNdwy2SLltRnDrbVxmE6ZmM6gHyJq/i8HiMXfvWChuvYChw2QEAmAAC2oGVTM61XtcYK33xAA754DON40GgnTYbRMUL+stZBcN4pZbl1HOchmDMr5mkgGCTULHWrSevvqawklFI0mE4E+Dwl85IJZWAO0qj9DJ+U6Uj4FxdMQzrbtoLmXMT9YQRmMmHJA1cdd/KvYXjj5HtlmZWHiD3brnUEaFySuh3BqjhxYQk20NsxkLJcuqSNCQcrgkSPlTjjpLW/L1M5RzSUk6+ntD3tfau57ZS3nI4en8pXGaR4YKkcz4flUFF83Hmydb94T3C6r3IgzkHMRJ32pbiMatwAOrOBb7mSznwTmyk5pPqdah31sHMUEl2ubt7TLkYjWPZqu8RrZ+/1KeG9xhYTEKEU2mHiwmbLbgatc7wnKsbRPrVbBfSQ1nve+7vJcFwMXyn69suafCfDtPlQFxVpcp7smO7+038okpJOpiTvvXExdpWQpYylAQrZySJYsd2IMljuKnEx1KDVPy9Tnx8Nyg4p6tDe9nN/DFGbL9Lsz44GXMZESAdxIG8CidqTcGPxBW5lHfYUx3qrpHiEZgQD05+dLf6zGZWNuWVxdWeTrqG00mjYviaXXa5ctqXcqSepT2fhU4XaFCKTT2KwcKUcNRe5UuviMrfWn+DfA+vXcXpUzn6aTy2qzee/mf6wxnxMDv1Gn0aVjxcm1jlvVe9irWsWlIhhy+2ZcfGpHFoZPcgzmJ9k+2ndkn/AC6Vt3uHQqtaOm5iGuo3eMAb2AJHfrAHdN3gAz7Expz31ph2Eu3Dci5czE4K7qbyv4vpDAHRjygTyiJ5Uq+kopB7lRBtsNFMG0uW3y6GjcN4oLJBtW1U92bU5R7BfORosDxa70n2qNUkNLXcjYXEmyR3jz3ehF2dfoya6N95jWg7O4R7r31vbRCZiwjPib6sVKkGSmRTqJDb1n0xSKCBaVhEfZ2yosba6IB7qoXcMjXDczOjHOYFxIXOCGIEaE5iZ86H2mFB+Fmj7P41UxGVtB9GDNFkiBkvTmhZAll0J0k+dJuIZrgtDuSTazFwqgGGdLi5V0LnKhlgCS0kjeY8EC4d88m7uBnad1KnXnox9xI56HxmNBtJbYuAsyxYszlhEuS3iO0cxp0ofaIXobQcMtTWt7/QBhcatmwquUt5+6QqTdDAd9iXBIP8sBkY84eROkPxJwwZUV5xrElc5UgYe4M4KnUEqBO2sb1k8ZgLTkuyu0rAHj8PsgMozkyFWNZBk84q9bvsLAsJItqc/skNm7t7WaSxOzk9JjlpTePAzb5FoWmyZTYABtWEOl7mTO78pnrrTm/xrDtfN4PoipmjWBCZtBOaCRt76yGGw9y2yP31x1UybZdhmjafFtty5etKsLYFnvIZjntta1GWM0eLQmdtqpYuHLZmLxMu49wfY/h5VmbiTKFgEth2Tfb2mNUePcK4dZQdxibuKck6IqoqxGrsQeugAOx252saLFsKrYtbiuWEqCNEIAYhXJAO4n51C7wS1dgpdyjbQ59hoNYj8zUwxalWJp9itXokZ67w8FbcEh29sMUCidogkx1mKdcb7PqbeHfDsmUWQLhLgg3UQXbxUncDP7I+6Y0qb9mBEC6x/wAg8v8AF5VqOGYXPw1rak97h7oEsBLJcXLkOb2VackjaFJMA10OUeTLUeqMDgezV+6Pq8rFgWVQRmZQSCwUeKMwiYA03qXEeDXFK25QOiFXVrtlSpNxyFILDWCJ9a0/E8hWySypa8VvvYS4viRgyiGAEyw1OmsDSlj38QWZEZHQNCswliupBljI0Gw01NCbZWVbUKuM4K7lUlZyIC2W4lyAQCrHIxyqRrJAGoqrd4S/dJdXxZ2KsqjVPZCk/wDUSY9POtSlxlcM6WyQoAZFVHUAZQFIGugjrpvRO6sPcFxUK3EKNNu0SQQW/iIpggzEwsxu21ZvEy6V4ajxJOc801vzEjLpLaR5afE10ERy+Ovz2+POvBo9aln0jT0iI91cpwRnE8jHnOnmI9K86TyPz+fn7qNbuDaR67/Ko3Lw5R7h+dRbstyjWrAnw8ifwHpQxm5bDy1qyrz5fCpBBz+PX9KebqTcb0YBWbnUkzCec+c1MqqyTprziPf7+dSRlOoYMOf4U2zWO1sijGdfh+9vWpByN/0/A9Km1sRNetNzgGeo/PT51GZF5lHc8jydP0j1ohHl8RUktZhop9wPyiuvgb+mW259x/TyqXJWa8RJXuRKTvQ3U8iY6H8Zq0mDvn+Ww+P7NEHDL8a2zE7iPwJqc6XNCzRktmUfENIPrXM/v92nzFMP6rvDXIQNj4k/WuNwtxvlHqy/rRnh1BrTQXZep3Oon8jXACJ/WB+lHvW0WfrbYO0F/L0NeV7YE/SLOvLOZ+AGlaXeyM5Ri9wJxQmOfOTHz511bpHlz3MfMmvXcTY2OItkc/DdPzCfnXLWJwo0+kSP+i5+JUTyp5dPwvwZOvUIbjA9B10g/CpFvPX1+O9AXH4NTIuOdCICEAGNDrGk8udCucTw0QHun0tKB83o4cuj8GNSlsy3nB3An0/OvFCPT5+6l68Uw453v9CH5G5U14xhx/fH3Wx/7jRwp8kSnJboZ22Mc/WQfyFEN1unxpUePWOVu57ylQPaC1yt3P8AUg/I1LwMR/2mmbQdBVIGbSgXeH2ztPy/I0sPH7X93cHWHT8MlRftCnK058zcUfglCwMZPRfYicYS3QDimBE6ALHmTPy0pal1rbaEqR0/e1NH47bIg2J9bh/JRQX4paPtYZD/AOZc/IiuyDxKqUft6kJO/oMOF9oogXD6nb1IPI/KtPwPifdXWuWzKspV1OpI/wCnSd+v4VhLmPtbLhbY9XvN5/fFTwHGzZYtatWlYqVJHenQ7jxXCKFB8k/L1NYTa0b0N3bs22sEWLjpctbJdlkdSwJW4mpjmHG0cjBCPEvcF64LLOXAyNhmBzqcoYNaDfxFkTA8XPxAZqSr2nvA5gtudpymfSZ2qeL7UX3Zc62S1sZVLWlLKAZChmloB2E6VrFzT2NJTw3ClvfkSxdrGFwTbvAGDAD7SdCV56xyO2lWeF4O69sq4vBhcBBIuGNxInlq0xGwpTe43cYsStqWOYk2bTEmSZJZTJ1Op61BeL3BOlrUR/BsiPSFil/Va5GSlTNEcJ5g+deGAH3h8q1B4G3VfhXrfAWn2xHu/SvLvEF3DE6GVbAjcMZ9Dr8Kh/V53CzWxHAm/vB56D8or39REam7/wDiJ+c0Z8QO4YnT7epjhgm6H5D/AL0VMCRyJ9PxrWf1Wg+259LT/kTXjw+1za97rbfmtJzmPuDW780ZpeFE8x+EVEcIgyCQf3v1pjiLV8MSlklSfDnzTEcwqb7mNflNdQ3tjhh65bsTPmm1F4vVGkexf7JePoVV4eToY+X5UvxeKw9u6yOXJBgwoI892H4Voe/uQALEGdTlvem2WAawfG5N+7mEHMZAEanyNa9nwpTk1N8uQsXs/DiraZfW5ZdiWxl9ZP3DAHqHPLTQVZbhuHIB/rBo6GQfgTNZcdf0qNdrwHyk/L0MdTXW+C2j7OOY7bET6+1+VHXs+q/+MuA7aN+OulY3nvB99S1HlvHxqHgYnz+SC2bb+zd3cYq9HPxH/wDr9aJb4FiT7ONu6aROYj4uBt+NYYXWEwxHof0oo4jd0+sf/UT58/Os32fG+ZeCKUvobi3wXFfaxdw6HZVPyLHT9a4cFi1H/NXSNv4CtPzP7NZYcaxQE98/TedBzM7c96l/afE6zd081Q+86a1n3fG/18F6FZ10NA9i8W8eIveY+igyI8hE+R194oLWoBDXHI3M4PeJI0ya/lSs9r8V95f9K/GKLa7Z3xutsneYO/pP4UcHGXJfpX/kTcehIHD7m6oG3iwVsAbxJ93/AHr3f4QEDvLZmP8Aw1sga7zp8KIO2t3TMoJ0mDEn8/8AerH9tVb27AY+bA/GR+4occb5X+jj6C+F+/5Khv4MmTdt/wDpCNOfst+/nXu7wJMi9a162L526ywE/jV9u1lg6thE02kWzy01K6e6of2iwLHxYNNd4t2p9+o67/7Qf1ekvGPoP4fdlVUwpEd7huR/gP11Elp8+W1edML/AH2G/wDT3J90NV3+tuGMDNgCOQtxvHMa/OoXBwpuRBOmhurtAjmB1pKTvVT8EOl7spsmGDZe+w8+eHceWstAqeTCD+fhen/L3Dz39r8asjgfDT/PZYj7arvyIcE7fhQm4BgIlcUZnQm5a9I0A+NPiQ6y8P4FS3O3MLh+V7C7Ha0v4F/3FROEw/8A8zhP/oL+GY1252OsRK4ocvuHr0IBodzsTOqXwfVYj1OaD7qSxMP/ACPw/gNCbLYiO/wh05YYae8Hz51wCyACL+EPOPotsn384oNzsNe5XbRHLVxMb7Kaj/Yy+CYuWiNvaYEeei/h0qlLB/yfb0AOl22CPr8ECdf+VGkTzC6UVsSoH/MYHofqDznll6Ut/sZip2TTnm/2mo/2RxQ3CDTmw291VWC/+ReXoFtDQ4gyB9JwI/8AJWB56p5UR8Q/LE8OPOTbA+WSs+vZrEz7CnT+8tR5a5uf51O52UxY/lT6Oh16b03DC+df9QTZ9YF5f2a6HE/v9KRpaH+MRp4bjAfCYouRh/Nf0IRhv6T051yceH1PWWOuaGl52PsOi/8AUrMPky1TuJi/s3LR8gCPxJPzqHeXeTod90PLznzogxd0fy0I8mIPwIp8bD6jlOEubXiQS7ihoQPVe7j4b0K9jsUJmR/i7oN79KvDiQGjW3/+wj/9qivGsNIBaD0Kt/7QaFllsSlFbTZnsa+JuCDfYettlEzyyn96VStrilj/AIjQRANy5BgmJDLGn51vMM1m4JUyOuo9+utGGEtz/t8qu2tP2NGsTlPyPnuLu49iPGTBLaXQNT5gz102pbiOF3WJLIWeQWbVidpJiSa+m3cBabdRMaSv4mZoNzginYAf5nX3aetNYkltRLjN70/zPlr8PAJJs3B1LAiNDpBM6z8qrHDrMhNOZJ2jlA5/oa+rDgxBMSJ5hz8iw0+VAvcNfYydt8jfj+9a0WPL2yeG3vFeXofLvo1uR4iPMiZOsD3R0rl7DJqoJLbf9xFfRrnBATrbs7aTaT0O1QudmgQfCm/V1Mb7qTV946/sS8BfL78T562BAgltTyjn5nkK5cwOhhlIAPMg6TPKtxieyoOotRylbnpzIkVTudk1GjC4o3mbbAb6nWSfdzql2hc2RLs8H/b9zJtYuERExy6T0On7ioDA3JMLpsT7/LlNa27wK1GYXnB81POTsDFLW7PMXKLfVj0OfrrusU12hdfJmcsDBj18a/YSthio8pOsj3fjyqq1uDHPz5fv861n9l7o8QVWIOmo685OpjnVa9wu6sSmX1ZTOxg67aT76ce0RezDukZK1KvMzjLETvvFdnXSOf6aj0pvnXUsoI3PU9J5bGheAEr3QGUSxmSJiNffyrRYn0Jl2NJ/iXmLtzMT8Y6/v1qOUb61euuFEKnIEltTqBMRRFtI5jnGsaRPwnSqz0R3Vt1FpsVN67+ddUA6mmS8PzAeIdJA6Ty0rjYFQdXgTAEEnfnRxI7B3PGq680UHcn3THwH6VEKTqOUVeuWVQEZgSIzaHykfP5V44QGYYQpAOh131199POjPu+InVa/oUfZ5if1GlFRCOa8uflM+kV63hHaIEz5jUbVYfDNJkQdZIIiNB+o2puS2I4cqugIxjxpcYT5nSOmu1dOMvKSO8cc/aMeuh867i1yueZIECBAiBp8IqGMYmDygCepjpyFKk+RFFm5xvEQo7xhl/xHWRz5bH5mpt2gxJP8VtfQ/l86WrodRPlqJ94qV1Tp5wfx1+RpcKHyoBkvaO+N3J2MkKdvONqs2+1t8KR4Zn7ukfudqQgT+lRX3VLwMJ/2oEj/2Q==" alt="Cidade">
+                    <h3>Turismo Urbano</h3>
+                    <p>Explore cidades vibrantes e sua cultura única.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="casamentos">
+            <h2>Casamentos</h2>
+            <p>Transforme o dia mais especial da sua vida em um evento inesquecível. Organizamos cerimônias e festas em locais incríveis, cuidando de todos os detalhes.</p>
+        </section>
+
+        <section id="formaturas">
+            <h2>Formaturas</h2>
+            <p>Comemore suas conquistas em grande estilo. Oferecemos pacotes personalizados para formaturas, desde o jantar até festas temáticas.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Entre em contato conosco para saber mais sobre os nossos serviços e pacotes. Estamos ansiosos para ajudá-lo a planejar a sua próxima viagem ou evento!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turismo e Eventos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

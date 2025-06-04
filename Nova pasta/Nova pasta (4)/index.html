@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA de Pesquisa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>IA de Pesquisa</h1>
+    <p>Digite sua consulta abaixo:</p>
+    <input type="text" id="query" placeholder="Digite aqui...">
+    <button onclick="search()">Pesquisar</button>
+
+    <script>
+        function search() {
+            let query = document.getElementById('query').value;
+            if (query) {
+                alert('Você pesquisou: ' + query);
+                // Aqui, você poderia integrar a funcionalidade de IA ou enviar o texto para um servidor.
+            } else {
+                alert('Por favor, insira uma consulta antes de pesquisar.');
+            }
+        }
+    </script>
+</body>
+</html>
+

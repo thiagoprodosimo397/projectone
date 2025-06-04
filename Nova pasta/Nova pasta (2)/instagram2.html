@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Rede Social</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .post {
+            background-color: white;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .post a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .post a:hover {
+            text-decoration: underline;
+        }
+        .like-button, .comment-button {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .comments {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini Rede Social</h1>
+    </header>
+    
+    <div class="post">
+        <h3><a href="perfilinstagram.html">Pretah</a></h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpL34x-CTNV5myW7UAKTPuAyonRpgQWYmNg&s" alt="">
+        <p>Este é um exemplo de post.</p>
+        <button class="like-button" onclick="curtir()">Curtir</button>
+        <button class="comment-button" onclick="mostrarFormulario()">Comentar</button>
+        <div class="comments" id="comments-section"></div>
+        <form id="comment-form" style="display: none;" onsubmit="adicionarComentario(event)">
+            <input type="text" id="comment-input" placeholder="Adicione um comentário">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function curtir() {
+            alert('Você curtiu este post!');
+        }
+
+        function mostrarFormulario() {
+            document.getElementById('comment-form').style.display = 'block';
+        }
+
+        function adicionarComentario(event) {
+            event.preventDefault();
+            const commentInput = document.getElementById('comment-input');
+            const commentsSection = document.getElementById('comments-section');
+            
+            if (commentInput.value.trim() !== "") {
+                const newComment = document.createElement('p');
+                newComment.textContent = commentInput.value;
+                commentsSection.appendChild(newComment);
+                commentInput.value = '';
+            } else {
+                alert('O comentário não pode estar vazio!');
+            }
+        }
+    </script>
+</body>
+</html>

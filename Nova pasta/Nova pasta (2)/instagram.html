@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 60%;
+        }
+        .feed {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .post {
+            width: 90%;
+            max-width: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .post .caption {
+            padding: 10px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>instagram</h1>
+        <input type="text" placeholder="Pesquisar...">
+    </header>
+    <main class="feed">
+        <div class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpL34x-CTNV5myW7UAKTPuAyonRpgQWYmNg&s" alt="Post 1">
+            <div class="caption">
+                <p><strong>Pretah</strong> - Tenha orgulho da sua COR!</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XJ0zBmBBOa-rxFRtFMq2hSccgrCClkCfDg&s" alt="Post 2">
+            <div class="caption">
+                <p><strong>@usuario2</strong> - Outro post incrível para o feed!</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2pXxsncuztlml_XRaYcMaxe4qBK4IBt1dXqndg565MEPDNZzT2Ww9ft1dDvJiMsfZfXU&usqp=CAU" alt="Post 2">
+            <div class="caption">
+                <p><strong>@usuario2</strong> - Outro post incrível para o feed!</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJgWHPwDRpmYY45bXfszN6Fi37rap1SPYVhg&s" alt="Post 2">
+            <div class="caption">
+                <p><strong>@usuario2</strong> - Outro post incrível para o feed!</p>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6MJt6AScPYaJULNgrT1zBCz7UYKLOIrU60A&s" alt="Post 2">
+            <div class="caption">
+                <p><strong>@usuario2</strong> - Prefeito de sorocaba é pego ao lado da corrupção</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">🏠 Início</a>
+        <a href="#">🔍 Expl

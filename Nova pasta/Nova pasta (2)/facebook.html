@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header {
+            background-color: #1877F2;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            width: 40%;
+        }
+        main {
+            padding: 20px;
+        }
+        .create-post {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .create-post textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+        }
+        .create-post button {
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .feed {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .post {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .post h3 {
+            margin: 0;
+        }
+        .post p {
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rede Social</h1>
+        <input type="text" placeholder="Pesquisar...">
+    </header>
+    <main>
+        <div class="create-post">
+            <textarea rows="3" placeholder="O que você está pensando?"></textarea>
+            <button>Publicar</button>
+        </div>
+        <div class="feed">
+            <div class="post">
+                <h3>Usuário 1</h3>
+                <p>Este é um exemplo de postagem em uma rede social!</p>
+            </div>
+            <div class="post">
+                <h3>Usuário 2</h3>
+                <p>Outro post interessante para compartilhar!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
